@@ -6,21 +6,21 @@
   <title>学校管理端｜北京市家校沟通与投诉规范平台</title>
   <link rel="icon" href="../assets/images/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../css/style.css">
 </head>
-<body data-page="school" data-level="pages">
+<body data-page="school" data-level="pages" data-auth-role="school">
   <a class="skip-link" href="#main">跳到主要内容</a>
   <header class="site-header">
     <div class="utility-bar"><div class="shell utility-inner"><span>机制原型 · 演示数据</span><div class="utility-actions"><button class="text-button" type="button" data-search-open>全站检索</button><button class="text-button" type="button" data-theme-toggle>深色模式</button></div></div></div>
-    <div class="shell brand-row"><a class="brand" href="../index.html"><img src="../assets/images/mark.svg" alt="" width="52" height="52"><span><strong>北京市家校沟通与投诉规范平台</strong><small>家校沟通 · 规范受理 · 权益保障 · 协同治理</small></span></a><div class="header-trust"><span class="status-dot"></span>学校处置入口</div></div>
-    <nav class="main-nav" aria-label="主要导航"><div class="shell nav-inner"><a href="../index.html">机制首页</a><a href="parent.html">家长端</a><a href="teacher.html">教师端</a><a class="active" href="school.html">学校管理端</a><a href="admin.html">教育行政端</a></div></nav>
+    <div class="shell brand-row"><a class="brand" href="../home.html"><img src="../assets/images/mark.svg" alt="" width="52" height="52"><span><strong>北京市家校沟通与投诉规范平台</strong><small>家校沟通 · 规范受理 · 权益保障 · 协同治理</small></span></a><div class="account-menu"><span class="status-dot"></span><span><strong data-user-name>演示用户</strong><small data-user-role>学校管理人员</small></span><button class="text-button account-switch" type="button" data-logout>切换身份</button></div></div>
+    <nav class="main-nav" aria-label="主要导航"><div class="shell nav-inner"><a href="../home.html">机制首页</a><a href="../index.html?next=parent">家长端</a><a href="../index.html?next=teacher">教师端</a><a class="active" href="school.html">学校管理端</a><a href="../index.html?next=admin">教育行政端</a></div></nav>
   </header>
 
   <main id="main">
-    <section class="page-hero"><div class="shell page-title"><div><div class="breadcrumb"><a href="../index.html">机制首页</a> / 学校管理端</div><h1>学校处置工作台</h1><p>统一受理家校反馈，按照风险等级和办理时限分派，完整记录调查材料、处理决定和结果反馈。</p></div><div class="page-badge" style="background:#a2691b"><strong>校</strong><span>规范处置</span></div></div></section>
+    <section class="page-hero"><div class="shell page-title"><div><div class="breadcrumb"><a href="../home.html">机制首页</a> / 学校管理端</div><h1>学校处置工作台</h1><p>统一受理家校反馈，按照风险等级和办理时限分派，完整记录调查材料、处理决定和结果反馈。</p></div><div class="page-badge" style="background:#a2691b"><strong>校</strong><span>规范处置</span></div></div></section>
     <div class="shell inner-layout">
       <aside class="side-nav" aria-label="本页导航"><strong>学校治理</strong><a class="active" href="#workbench">处置工作台</a><a href="#archive">投诉档案</a><a href="#analysis">统计分析</a><a href="#notices">校内公告</a></aside>
       <div class="content-stack">
         <section class="content-section" id="workbench">
-          <div class="block-title"><div><h2>一、处置工作台</h2><p>每条事项明确分级、承办人、办理期限和下一节点。</p></div><button class="button small primary" type="button" data-toast-message="新建线下事项登记已打开（离线演示）">登记线下事项</button></div>
+          <div class="block-title"><div><h2>一、处置工作台</h2><p>每条事项明确分级、承办人、办理期限和下一节点。</p></div><button class="button small primary" type="button" data-open-entry>登记线下事项</button></div>
           <div class="stats-grid">
             <div class="stat-card"><span>待受理</span><strong>6</strong><small>最早提交于2小时前</small></div>
             <div class="stat-card"><span>调查处理中</span><strong>14</strong><small>2项将在今日到期</small></div>
@@ -55,8 +55,8 @@
         </section>
 
         <section class="content-section" id="notices">
-          <div class="block-title"><div><h2>四、校内公告</h2><p>向指定年级、班级或全校发布规范沟通提醒。</p></div><button class="button small primary" type="button" data-toast-message="公告编辑器已打开（离线演示）">新建公告</button></div>
-          <div class="record-list">
+          <div class="block-title"><div><h2>四、校内公告</h2><p>向指定年级、班级或全校发布规范沟通提醒。</p></div><button class="button small primary" type="button" data-open-notice>新建公告</button></div>
+          <div class="record-list" data-notice-list>
             <article class="record-item"><div><h4>关于统一使用班级通知渠道的提示</h4><div class="record-meta"><span>发布范围：全校</span><span>发布人：校办公室</span><span>2026-09-07 16:30</span></div></div><div class="record-actions"><span class="tag green">已发布</span><button class="link-button" type="button" data-toast-message="公告详情已打开（离线演示）">查看</button></div></article>
             <article class="record-item"><div><h4>家长开放日沟通安排</h4><div class="record-meta"><span>发布范围：六年级</span><span>发布人：年级组</span><span>2026-09-05 11:00</span></div></div><div class="record-actions"><span class="tag gray">已结束</span><button class="link-button" type="button" data-toast-message="公告详情已打开（离线演示）">查看</button></div></article>
           </div>
@@ -65,7 +65,7 @@
     </div>
   </main>
 
-  <footer class="site-footer"><div class="shell footer-grid"><div><strong>北京市家校沟通与投诉规范平台</strong><p>辅助机制落实的离线演示原型。</p></div><div><span>切换入口</span><a href="parent.html">家长端</a><a href="teacher.html">教师端</a></div><div><span>治理监督</span><a href="admin.html">教育行政端</a><a href="../docs/使用说明.txt">使用说明</a></div><div><span>演示工具</span><button class="footer-button" type="button" data-reset-demo>重置演示数据</button></div></div><div class="shell footer-bottom"><span>© 2026 机制原型</span><span>演示数据 · 非正式政务系统</span></div></footer>
+  <footer class="site-footer"><div class="shell footer-grid"><div><strong>北京市家校沟通与投诉规范平台</strong><p>辅助机制落实的离线演示原型。</p></div><div><span>切换入口</span><a href="../index.html?next=parent">家长端</a><a href="../index.html?next=teacher">教师端</a></div><div><span>治理监督</span><a href="../index.html?next=admin">教育行政端</a><a href="../docs/使用说明.txt">使用说明</a></div><div><span>演示工具</span><button class="footer-button" type="button" data-reset-demo>重置演示数据</button></div></div><div class="shell footer-bottom"><span>© 2026 机制原型</span><span>演示数据 · 非正式政务系统</span></div></footer>
   <button class="back-top" type="button" data-back-top aria-label="返回顶部">↑</button><div class="toast" role="status" aria-live="polite" data-toast></div>
   <dialog class="modal" data-search-dialog><form method="dialog" class="modal-card search-modal"><div class="modal-head"><div><p class="eyebrow">全站检索</p><h2>查找机制功能</h2></div><button class="icon-button" value="cancel" aria-label="关闭">×</button></div><label class="search-field"><span>⌕</span><input type="search" placeholder="例如：记录查询、证据包、风险预警" data-search-input autocomplete="off"></label><div class="search-results" data-search-results></div></form></dialog>
   <script src="../js/main.js"></script>

@@ -6,16 +6,16 @@
   <title>教育行政端｜北京市家校沟通与投诉规范平台</title>
   <link rel="icon" href="../assets/images/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../css/style.css">
 </head>
-<body data-page="admin" data-level="pages">
+<body data-page="admin" data-level="pages" data-auth-role="admin">
   <a class="skip-link" href="#main">跳到主要内容</a>
   <header class="site-header">
     <div class="utility-bar"><div class="shell utility-inner"><span>机制原型 · 演示数据</span><div class="utility-actions"><button class="text-button" type="button" data-search-open>全站检索</button><button class="text-button" type="button" data-theme-toggle>深色模式</button></div></div></div>
-    <div class="shell brand-row"><a class="brand" href="../index.html"><img src="../assets/images/mark.svg" alt="" width="52" height="52"><span><strong>北京市家校沟通与投诉规范平台</strong><small>家校沟通 · 规范受理 · 权益保障 · 协同治理</small></span></a><div class="header-trust"><span class="status-dot"></span>教育行政入口</div></div>
-    <nav class="main-nav" aria-label="主要导航"><div class="shell nav-inner"><a href="../index.html">机制首页</a><a href="parent.html">家长端</a><a href="teacher.html">教师端</a><a href="school.html">学校管理端</a><a class="active" href="admin.html">教育行政端</a></div></nav>
+    <div class="shell brand-row"><a class="brand" href="../home.html"><img src="../assets/images/mark.svg" alt="" width="52" height="52"><span><strong>北京市家校沟通与投诉规范平台</strong><small>家校沟通 · 规范受理 · 权益保障 · 协同治理</small></span></a><div class="account-menu"><span class="status-dot"></span><span><strong data-user-name>演示用户</strong><small data-user-role>教育行政人员</small></span><button class="text-button account-switch" type="button" data-logout>切换身份</button></div></div>
+    <nav class="main-nav" aria-label="主要导航"><div class="shell nav-inner"><a href="../home.html">机制首页</a><a href="../index.html?next=parent">家长端</a><a href="../index.html?next=teacher">教师端</a><a href="../index.html?next=school">学校管理端</a><a class="active" href="admin.html">教育行政端</a></div></nav>
   </header>
 
   <main id="main">
-    <section class="page-hero"><div class="shell page-title"><div><div class="breadcrumb"><a href="../index.html">机制首页</a> / 教育行政端</div><h1>区域监督与协同治理</h1><p>聚合区域办理态势，识别需要人工核验的异常线索，推动跨部门协调、制度评估和学校治理改进。</p></div><div class="page-badge" style="background:#405b85"><strong>政</strong><span>审慎监督</span></div></div></section>
+    <section class="page-hero"><div class="shell page-title"><div><div class="breadcrumb"><a href="../home.html">机制首页</a> / 教育行政端</div><h1>区域监督与协同治理</h1><p>聚合区域办理态势，识别需要人工核验的异常线索，推动跨部门协调、制度评估和学校治理改进。</p></div><div class="page-badge" style="background:#405b85"><strong>政</strong><span>审慎监督</span></div></div></section>
     <div class="shell inner-layout">
       <aside class="side-nav" aria-label="本页导航"><strong>行政监督</strong><a class="active" href="#dashboard">区级看板</a><a href="#warnings">风险预警</a><a href="#credit">信用记录</a><a href="#coordination">联席协调</a></aside>
       <div class="content-stack">
@@ -27,7 +27,7 @@
             <div class="stat-card"><span>沟通协商解决率</span><strong>68.0%</strong><small>较上月提升6.2%</small></div>
             <div class="stat-card"><span>进入复核程序</span><strong>37</strong><small>占全部事项2.9%</small></div>
           </div>
-          <div class="card" style="margin-top:14px"><div class="card-head"><h3>区域事项类型分布</h3><button class="button small ghost" type="button" data-toast-message="月度治理摘要已导出（离线演示）">导出摘要</button></div><div class="card-body"><div class="bar-list">
+          <div class="card" style="margin-top:14px"><div class="card-head"><h3>区域事项类型分布</h3><button class="button small ghost" type="button" data-export-summary>导出摘要</button></div><div class="card-body"><div class="bar-list">
             <div class="bar-row"><span>教育教学</span><div class="bar-track"><i style="width:78%"></i></div><b>37%</b></div>
             <div class="bar-row"><span>班级管理</span><div class="bar-track"><i style="width:55%"></i></div><b>26%</b></div>
             <div class="bar-row"><span>学生生活</span><div class="bar-track"><i style="width:35%"></i></div><b>17%</b></div>
@@ -66,8 +66,8 @@
         </section>
 
         <section class="content-section" id="coordination">
-          <div class="block-title"><div><h2>四、联席协调</h2><p>对复杂事项建立教育行政、学校、法律和心理支持的协同记录。</p></div><button class="button small primary" type="button" data-toast-message="新建联席事项已打开（离线演示）">发起联席协调</button></div>
-          <div class="record-list">
+          <div class="block-title"><div><h2>四、联席协调</h2><p>对复杂事项建立教育行政、学校、法律和心理支持的协同记录。</p></div><button class="button small primary" type="button" data-open-coordination>发起联席协调</button></div>
+          <div class="record-list" data-coordination-list>
             <article class="record-item"><div><h4>LX-2026-012 · 跨校转学期间家校事项协调</h4><div class="record-meta"><span>牵头：区教育行政部门</span><span>参与：2所学校、法律顾问</span><span>下次会商：09-11 14:00</span></div></div><span class="tag blue">协调中</span></article>
             <article class="record-item"><div><h4>LX-2026-009 · 教师心理支持与工作安排</h4><div class="record-meta"><span>牵头：教师工作科</span><span>参与：学校、心理服务机构</span><span>形成措施4项</span></div></div><span class="tag green">已落实</span></article>
           </div>
@@ -76,7 +76,7 @@
     </div>
   </main>
 
-  <footer class="site-footer"><div class="shell footer-grid"><div><strong>北京市家校沟通与投诉规范平台</strong><p>辅助机制落实的离线演示原型。</p></div><div><span>服务入口</span><a href="parent.html">家长端</a><a href="teacher.html">教师端</a></div><div><span>治理入口</span><a href="school.html">学校管理端</a><a href="../docs/使用说明.txt">使用说明</a></div><div><span>演示工具</span><button class="footer-button" type="button" data-reset-demo>重置演示数据</button></div></div><div class="shell footer-bottom"><span>© 2026 机制原型</span><span>演示数据 · 非正式政务系统</span></div></footer>
+  <footer class="site-footer"><div class="shell footer-grid"><div><strong>北京市家校沟通与投诉规范平台</strong><p>辅助机制落实的离线演示原型。</p></div><div><span>服务入口</span><a href="../index.html?next=parent">家长端</a><a href="../index.html?next=teacher">教师端</a></div><div><span>治理入口</span><a href="../index.html?next=school">学校管理端</a><a href="../docs/使用说明.txt">使用说明</a></div><div><span>演示工具</span><button class="footer-button" type="button" data-reset-demo>重置演示数据</button></div></div><div class="shell footer-bottom"><span>© 2026 机制原型</span><span>演示数据 · 非正式政务系统</span></div></footer>
   <button class="back-top" type="button" data-back-top aria-label="返回顶部">↑</button><div class="toast" role="status" aria-live="polite" data-toast></div>
   <dialog class="modal" data-search-dialog><form method="dialog" class="modal-card search-modal"><div class="modal-head"><div><p class="eyebrow">全站检索</p><h2>查找机制功能</h2></div><button class="icon-button" value="cancel" aria-label="关闭">×</button></div><label class="search-field"><span>⌕</span><input type="search" placeholder="例如：记录查询、证据包、风险预警" data-search-input autocomplete="off"></label><div class="search-results" data-search-results></div></form></dialog>
   <script src="../js/main.js"></script>

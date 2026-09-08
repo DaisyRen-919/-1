@@ -6,23 +6,23 @@
   <title>家长端｜北京市家校沟通与投诉规范平台</title>
   <link rel="icon" href="../assets/images/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../css/style.css">
 </head>
-<body data-page="parent" data-level="pages">
+<body data-page="parent" data-level="pages" data-auth-role="parent">
   <a class="skip-link" href="#main">跳到主要内容</a>
   <header class="site-header">
     <div class="utility-bar"><div class="shell utility-inner"><span>机制原型 · 演示数据</span><div class="utility-actions"><button class="text-button" type="button" data-search-open>全站检索</button><button class="text-button" type="button" data-theme-toggle>深色模式</button></div></div></div>
-    <div class="shell brand-row"><a class="brand" href="../index.html"><img src="../assets/images/mark.svg" alt="" width="52" height="52"><span><strong>北京市家校沟通与投诉规范平台</strong><small>家校沟通 · 规范受理 · 权益保障 · 协同治理</small></span></a><div class="header-trust"><span class="status-dot"></span>家长服务入口</div></div>
-    <nav class="main-nav" aria-label="主要导航"><div class="shell nav-inner"><a href="../index.html">机制首页</a><a class="active" href="parent.html">家长端</a><a href="teacher.html">教师端</a><a href="school.html">学校管理端</a><a href="admin.html">教育行政端</a></div></nav>
+    <div class="shell brand-row"><a class="brand" href="../home.html"><img src="../assets/images/mark.svg" alt="" width="52" height="52"><span><strong>北京市家校沟通与投诉规范平台</strong><small>家校沟通 · 规范受理 · 权益保障 · 协同治理</small></span></a><div class="account-menu"><span class="status-dot"></span><span><strong data-user-name>演示用户</strong><small data-user-role>家长</small></span><button class="text-button account-switch" type="button" data-logout>切换身份</button></div></div>
+    <nav class="main-nav" aria-label="主要导航"><div class="shell nav-inner"><a href="../home.html">机制首页</a><a class="active" href="parent.html">家长端</a><a href="../index.html?next=teacher">教师端</a><a href="../index.html?next=school">学校管理端</a><a href="../index.html?next=admin">教育行政端</a></div></nav>
   </header>
 
   <main id="main">
-    <section class="page-hero"><div class="shell page-title"><div><div class="breadcrumb"><a href="../index.html">机制首页</a> / 家长端</div><h1>家长服务入口</h1><p>先沟通、再反馈。平台将原始信息、受理节点和办理结果统一留痕，帮助家长清楚表达、持续查询。</p></div><div class="page-badge"><strong>家</strong><span>理性沟通</span></div></div></section>
+    <section class="page-hero"><div class="shell page-title"><div><div class="breadcrumb"><a href="../home.html">机制首页</a> / 家长端</div><h1>家长服务入口</h1><p>先沟通、再反馈。平台将原始信息、受理节点和办理结果统一留痕，帮助家长清楚表达、持续查询。</p></div><div class="page-badge"><strong>家</strong><span>理性沟通</span></div></div></section>
     <div class="shell inner-layout">
       <aside class="side-nav" aria-label="本页导航"><strong>家长服务</strong><a class="active" href="#communication">教师沟通</a><a href="#feedback">提交反馈</a><a href="#records">我的记录</a><a href="#notices">通知中心</a></aside>
       <div class="content-stack">
         <section class="content-section" id="communication">
           <div class="block-title"><div><h2>一、教师沟通</h2><p>建议优先通过沟通澄清事实；提交内容会按原文留痕。</p></div><span class="tag green">沟通通道正常</span></div>
           <div class="card">
-            <div class="card-head"><div><h3>六年级（2）班 · 李老师</h3><small style="color:var(--muted)">班主任 / 语文教师 · 工作时段内回复</small></div><button class="button small ghost" type="button" data-toast-message="教师列表已切换（离线演示）">切换教师</button></div>
+            <div class="card-head"><div><h3 data-current-teacher>六年级（2）班 · 李老师</h3><small data-current-teacher-detail style="color:var(--muted)">班主任 / 语文教师 · 工作时段内回复</small></div><button class="button small ghost" type="button" data-teacher-switch>切换教师</button></div>
             <div class="card-body">
               <div class="notice blue">平台只保留沟通原文，不支持删除或覆盖。需要订正时，请追加一条说明。</div>
               <div class="message-list" data-message-list style="margin-top:18px"></div>
@@ -71,10 +71,10 @@
     </div>
   </main>
 
-  <footer class="site-footer"><div class="shell footer-grid"><div><strong>北京市家校沟通与投诉规范平台</strong><p>辅助机制落实的离线演示原型。</p></div><div><span>切换入口</span><a href="teacher.html">教师端</a><a href="school.html">学校端</a></div><div><span>治理监督</span><a href="admin.html">教育行政端</a><a href="../docs/使用说明.txt">使用说明</a></div><div><span>演示工具</span><button class="footer-button" type="button" data-reset-demo>重置演示数据</button></div></div><div class="shell footer-bottom"><span>© 2026 机制原型</span><span>演示数据 · 非正式政务系统</span></div></footer>
+  <footer class="site-footer"><div class="shell footer-grid"><div><strong>北京市家校沟通与投诉规范平台</strong><p>辅助机制落实的离线演示原型。</p></div><div><span>切换入口</span><a href="../index.html?next=teacher">教师端</a><a href="../index.html?next=school">学校端</a></div><div><span>治理监督</span><a href="../index.html?next=admin">教育行政端</a><a href="../docs/使用说明.txt">使用说明</a></div><div><span>演示工具</span><button class="footer-button" type="button" data-reset-demo>重置演示数据</button></div></div><div class="shell footer-bottom"><span>© 2026 机制原型</span><span>演示数据 · 非正式政务系统</span></div></footer>
   <button class="back-top" type="button" data-back-top aria-label="返回顶部">↑</button><div class="toast" role="status" aria-live="polite" data-toast></div>
 
-  <dialog class="modal" data-record-dialog><form method="dialog" class="modal-card"><div class="modal-head"><div><p class="eyebrow">事项详情</p><h2>处理时间线</h2></div><button class="icon-button" value="cancel" aria-label="关闭">×</button></div><div data-record-detail></div><div class="modal-actions"><button class="button secondary" value="cancel">关闭</button><button class="button primary" value="cancel" type="button" data-toast-message="复核申请入口已打开（离线演示）">申请复核</button></div></form></dialog>
+  <dialog class="modal" data-record-dialog><form method="dialog" class="modal-card"><div class="modal-head"><div><p class="eyebrow">事项详情</p><h2>处理时间线</h2></div><button class="icon-button" value="cancel" aria-label="关闭">×</button></div><div data-record-detail></div><div class="modal-actions"><button class="button secondary" value="cancel">关闭</button><button class="button primary" type="button" data-review-action>申请复核</button></div></form></dialog>
   <dialog class="modal" data-search-dialog><form method="dialog" class="modal-card search-modal"><div class="modal-head"><div><p class="eyebrow">全站检索</p><h2>查找机制功能</h2></div><button class="icon-button" value="cancel" aria-label="关闭">×</button></div><label class="search-field"><span>⌕</span><input type="search" placeholder="例如：记录查询、证据包、风险预警" data-search-input autocomplete="off"></label><div class="search-results" data-search-results></div></form></dialog>
   <script src="../js/main.js"></script>
 </body>
