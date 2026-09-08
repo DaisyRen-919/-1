@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="教师沟通留痕、权益反馈与支持入口">
+  <title>教师端｜北京市家校沟通与投诉规范平台</title>
+  <link rel="icon" href="../assets/images/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="teacher" data-level="pages">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header">
+    <div class="utility-bar"><div class="shell utility-inner"><span>机制原型 · 演示数据</span><div class="utility-actions"><button class="text-button" type="button" data-search-open>全站检索</button><button class="text-button" type="button" data-theme-toggle>深色模式</button></div></div></div>
+    <div class="shell brand-row"><a class="brand" href="../index.html"><img src="../assets/images/mark.svg" alt="" width="52" height="52"><span><strong>北京市家校沟通与投诉规范平台</strong><small>家校沟通 · 规范受理 · 权益保障 · 协同治理</small></span></a><div class="header-trust"><span class="status-dot"></span>教师工作入口</div></div>
+    <nav class="main-nav" aria-label="主要导航"><div class="shell nav-inner"><a href="../index.html">机制首页</a><a href="parent.html">家长端</a><a class="active" href="teacher.html">教师端</a><a href="school.html">学校管理端</a><a href="admin.html">教育行政端</a></div></nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero"><div class="shell page-title"><div><div class="breadcrumb"><a href="../index.html">机制首页</a> / 教师端</div><h1>教师工作与权益入口</h1><p>集中查看家校沟通和反馈事项，形成可核验的证据链，同时连接权益反馈、法律咨询与心理支持。</p></div><div class="page-badge" style="background:#296b7f"><strong>师</strong><span>专业保障</span></div></div></section>
+    <div class="shell inner-layout">
+      <aside class="side-nav" aria-label="本页导航"><strong>教师服务</strong><a class="active" href="#overview">工作概览</a><a href="#messages">沟通记录</a><a href="#rights">权益反馈</a><a href="#evidence">证据包</a><a href="#support">支持服务</a></aside>
+      <div class="content-stack">
+        <section class="content-section" id="overview">
+          <div class="block-title"><div><h2>一、工作概览</h2><p>仅展示与本人工作相关且有权限查看的事项。</p></div><span class="tag green">身份已核验</span></div>
+          <div class="stats-grid">
+            <div class="stat-card"><span>待回复沟通</span><strong>3</strong><small>其中1条今日到期</small></div>
+            <div class="stat-card"><span>涉及本人事项</span><strong>2</strong><small>均处于调查阶段</small></div>
+            <div class="stat-card"><span>已形成证据包</span><strong>5</strong><small>本学期累计</small></div>
+            <div class="stat-card"><span>权益反馈</span><strong>1</strong><small>校级复核中</small></div>
+          </div>
+        </section>
+
+        <section class="content-section" id="messages">
+          <div class="block-title"><div><h2>二、沟通记录</h2><p>按班级、学生和时间查看家校沟通，支持打印归档。</p></div><button class="button small ghost" type="button" data-print>打印沟通记录</button></div>
+          <div class="card">
+            <div class="toolbar"><div class="filters"><button class="chip active" type="button">六年级（2）班</button><button class="chip" type="button" data-toast-message="班级筛选已切换（离线演示）">六年级（1）班</button><button class="chip" type="button" data-toast-message="已显示全部班级（离线演示）">全部班级</button></div><span class="tag blue">原始记录封存</span></div>
+            <div class="card-body"><div class="notice blue">记录只读。若需说明，请通过“追加说明”形成新的时间戳记录。</div><div class="message-list" data-message-list style="margin-top:18px"></div><div class="form-actions"><button class="button small ghost" type="button" data-toast-message="追加说明入口已打开（离线演示）">追加说明</button><button class="button small primary" type="button" data-toast-message="已将相关记录加入证据包">加入证据包</button></div></div>
+          </div>
+        </section>
+
+        <section class="content-section" id="rights">
+          <div class="block-title"><div><h2>三、教师权益反馈</h2><p>对不实信息、程序问题或权益受损情况进行实名反馈。</p></div></div>
+          <div class="card">
+            <div class="card-head"><h3>新增权益事项</h3><span class="tag amber">分级可见</span></div>
+            <div class="card-body">
+              <form data-rights-form>
+                <div class="form-grid">
+                  <label class="field"><span>权益事项类型</span><select name="category" required><option>程序保障</option><option>名誉与专业评价</option><option>工作秩序</option><option>人身安全</option><option>其他</option></select></label>
+                  <label class="field"><span>事项标题</span><input name="title" placeholder="简要概括权益诉求" required></label>
+                  <label class="field full"><span>情况说明</span><textarea name="detail" placeholder="请说明相关编号、事实经过及希望获得的支持。" required></textarea></label>
+                </div>
+                <div class="form-actions"><button class="button primary" type="submit">提交并留痕</button></div>
+              </form>
+            </div>
+          </div>
+          <div class="record-list" data-rights-list style="margin-top:12px"></div>
+        </section>
+
+        <section class="content-section" id="evidence">
+          <div class="block-title"><div><h2>四、一键证据包</h2><p>按照事项编号汇总沟通原文、时间戳、附件目录、处置节点与教师说明。</p></div></div>
+          <div class="card">
+            <div class="card-head"><h3>JX-2026-0908-016 · 证据包预览</h3><span class="tag green">材料完整</span></div>
+            <div class="card-body">
+              <div class="form-grid">
+                <div><strong>01 沟通原文</strong><p style="color:var(--muted)">2条记录，含发送人、时间戳和只读校验信息</p></div>
+                <div><strong>02 事项材料</strong><p style="color:var(--muted)">反馈原文、附件目录、补充材料清单</p></div>
+                <div><strong>03 处置节点</strong><p style="color:var(--muted)">受理、转办、调查和反馈记录</p></div>
+                <div><strong>04 教师说明</strong><p style="color:var(--muted)">本人补充说明与教研组核验意见</p></div>
+              </div>
+              <div class="notice" style="margin-top:14px">导出材料含敏感信息，请仅用于依法依规的申诉、复核或法律咨询。</div>
+              <div class="form-actions"><button class="button ghost" type="button" data-toast-message="证据包目录已重新生成">重新汇总</button><button class="button primary" type="button" data-print>打印 / 另存为PDF</button></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section" id="support">
+          <div class="block-title"><div><h2>五、支持服务</h2><p>紧急人身安全风险请优先联系学校值班负责人或报警。</p></div></div>
+          <div class="support-grid">
+            <article class="support-card"><span class="support-icon">法</span><h3>法律咨询转介</h3><p>准备事项编号和证据包后，申请法律咨询或工会支持。</p><button class="link-button" type="button" data-toast-message="法律咨询申请已进入转介队列（离线演示）">申请转介 →</button></article>
+            <article class="support-card"><span class="support-icon" style="background:#45745c">心</span><h3>心理支持</h3><p>提供压力疏导、情绪支持和专业心理服务预约指引。</p><button class="link-button" type="button" data-toast-message="心理支持预约入口已打开（离线演示）">查看服务 →</button></article>
+            <article class="support-card"><span class="support-icon" style="background:#9a6317">急</span><h3>紧急安全支持</h3><p>遭遇威胁、跟踪或现实冲突时启动校内安全协同。</p><button class="link-button" type="button" data-toast-message="安全支持流程已启动（离线演示）">启动协同 →</button></article>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-grid"><div><strong>北京市家校沟通与投诉规范平台</strong><p>辅助机制落实的离线演示原型。</p></div><div><span>切换入口</span><a href="parent.html">家长端</a><a href="school.html">学校端</a></div><div><span>治理监督</span><a href="admin.html">教育行政端</a><a href="../docs/使用说明.txt">使用说明</a></div><div><span>演示工具</span><button class="footer-button" type="button" data-reset-demo>重置演示数据</button></div></div><div class="shell footer-bottom"><span>© 2026 机制原型</span><span>演示数据 · 非正式政务系统</span></div></footer>
+  <button class="back-top" type="button" data-back-top aria-label="返回顶部">↑</button><div class="toast" role="status" aria-live="polite" data-toast></div>
+  <dialog class="modal" data-search-dialog><form method="dialog" class="modal-card search-modal"><div class="modal-head"><div><p class="eyebrow">全站检索</p><h2>查找机制功能</h2></div><button class="icon-button" value="cancel" aria-label="关闭">×</button></div><label class="search-field"><span>⌕</span><input type="search" placeholder="例如：记录查询、证据包、风险预警" data-search-input autocomplete="off"></label><div class="search-results" data-search-results></div></form></dialog>
+  <script src="../js/main.js"></script>
+</body>
+</html>

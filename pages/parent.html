@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="家长沟通、反馈与记录查询入口">
+  <title>家长端｜北京市家校沟通与投诉规范平台</title>
+  <link rel="icon" href="../assets/images/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="parent" data-level="pages">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header">
+    <div class="utility-bar"><div class="shell utility-inner"><span>机制原型 · 演示数据</span><div class="utility-actions"><button class="text-button" type="button" data-search-open>全站检索</button><button class="text-button" type="button" data-theme-toggle>深色模式</button></div></div></div>
+    <div class="shell brand-row"><a class="brand" href="../index.html"><img src="../assets/images/mark.svg" alt="" width="52" height="52"><span><strong>北京市家校沟通与投诉规范平台</strong><small>家校沟通 · 规范受理 · 权益保障 · 协同治理</small></span></a><div class="header-trust"><span class="status-dot"></span>家长服务入口</div></div>
+    <nav class="main-nav" aria-label="主要导航"><div class="shell nav-inner"><a href="../index.html">机制首页</a><a class="active" href="parent.html">家长端</a><a href="teacher.html">教师端</a><a href="school.html">学校管理端</a><a href="admin.html">教育行政端</a></div></nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero"><div class="shell page-title"><div><div class="breadcrumb"><a href="../index.html">机制首页</a> / 家长端</div><h1>家长服务入口</h1><p>先沟通、再反馈。平台将原始信息、受理节点和办理结果统一留痕，帮助家长清楚表达、持续查询。</p></div><div class="page-badge"><strong>家</strong><span>理性沟通</span></div></div></section>
+    <div class="shell inner-layout">
+      <aside class="side-nav" aria-label="本页导航"><strong>家长服务</strong><a class="active" href="#communication">教师沟通</a><a href="#feedback">提交反馈</a><a href="#records">我的记录</a><a href="#notices">通知中心</a></aside>
+      <div class="content-stack">
+        <section class="content-section" id="communication">
+          <div class="block-title"><div><h2>一、教师沟通</h2><p>建议优先通过沟通澄清事实；提交内容会按原文留痕。</p></div><span class="tag green">沟通通道正常</span></div>
+          <div class="card">
+            <div class="card-head"><div><h3>六年级（2）班 · 李老师</h3><small style="color:var(--muted)">班主任 / 语文教师 · 工作时段内回复</small></div><button class="button small ghost" type="button" data-toast-message="教师列表已切换（离线演示）">切换教师</button></div>
+            <div class="card-body">
+              <div class="notice blue">平台只保留沟通原文，不支持删除或覆盖。需要订正时，请追加一条说明。</div>
+              <div class="message-list" data-message-list style="margin-top:18px"></div>
+              <form data-message-form style="margin-top:18px">
+                <label class="field"><span>发送沟通内容</span><textarea data-message-input placeholder="请描述可核验的事实、时间和希望共同解决的问题。" required></textarea></label>
+                <div class="form-actions"><button class="button primary" type="submit">发送并留痕</button></div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section" id="feedback">
+          <div class="block-title"><div><h2>二、提交反馈</h2><p>请避免推测和人身评价，优先提交时间、地点、经过及具体诉求。</p></div></div>
+          <div class="card">
+            <div class="card-head"><h3>规范反馈表</h3><span class="tag amber">提交后不可改写</span></div>
+            <div class="card-body">
+              <div class="notice">提交前确认：我已阅读反馈规则，材料来源合法，所述内容尽可能真实准确。风险提示仅用于改善表达，不会自动拒绝提交。</div>
+              <form data-feedback-form style="margin-top:18px">
+                <div class="form-grid">
+                  <label class="field"><span>反馈类型</span><select name="category" required><option value="教育教学">教育教学</option><option value="班级管理">班级管理</option><option value="学生生活">学生生活</option><option value="师德师风">师德师风</option><option value="学校管理">学校管理</option><option value="其他">其他</option></select></label>
+                  <label class="field"><span>涉及教师 / 部门</span><input name="target" placeholder="例如：六年级数学组"></label>
+                  <label class="field full"><span>事项标题</span><input name="subject" placeholder="用一句话概括需要解决的问题" required></label>
+                  <label class="field full"><span>事实经过与诉求</span><textarea name="description" placeholder="建议按“时间—地点—具体经过—已有沟通—希望如何处理”的顺序填写。" minlength="20" required></textarea><div class="risk-box" data-risk-box></div><small>不少于20字。请勿填写与事项无关的个人敏感信息。</small></label>
+                  <label class="field full"><span>附件材料（可选）</span><input type="file" multiple accept="image/*,.pdf,.doc,.docx"><div class="file-list" data-file-list>未选择文件</div><small>离线演示不会上传文件，仅展示所选文件名。</small></label>
+                  <label class="checkbox-row field full"><input type="checkbox" required><span>我确认已经阅读规则，愿意对所提交事实和材料的真实性负责。</span></label>
+                </div>
+                <div class="form-actions"><button class="button secondary" type="reset">清空</button><button class="button primary" type="submit">提交并生成编号</button></div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section" id="records">
+          <div class="block-title"><div><h2>三、我的反馈记录</h2><p>查看受理状态、承办人员、办理期限和完整处理时间线。</p></div><button class="button small ghost" type="button" data-print>打印当前页</button></div>
+          <div class="record-list" data-parent-records></div>
+        </section>
+
+        <section class="content-section" id="notices">
+          <div class="block-title"><div><h2>四、通知中心</h2><p>接收学校公告、班级通知和反馈节点提醒。</p></div></div>
+          <div class="card-grid" style="display:grid;gap:12px">
+            <article class="record-item"><div><h4>处理节点更新</h4><div class="record-meta"><span>JX-2026-0908-016 已由年级组受理</span><span>今天 10:02</span></div></div><span class="tag blue">未读</span></article>
+            <article class="record-item"><div><h4>班级沟通提示</h4><div class="record-meta"><span>本周家长开放日预约时间为周四 18:00 前</span><span>昨天 16:30</span></div></div><span class="tag gray">已读</span></article>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-grid"><div><strong>北京市家校沟通与投诉规范平台</strong><p>辅助机制落实的离线演示原型。</p></div><div><span>切换入口</span><a href="teacher.html">教师端</a><a href="school.html">学校端</a></div><div><span>治理监督</span><a href="admin.html">教育行政端</a><a href="../docs/使用说明.txt">使用说明</a></div><div><span>演示工具</span><button class="footer-button" type="button" data-reset-demo>重置演示数据</button></div></div><div class="shell footer-bottom"><span>© 2026 机制原型</span><span>演示数据 · 非正式政务系统</span></div></footer>
+  <button class="back-top" type="button" data-back-top aria-label="返回顶部">↑</button><div class="toast" role="status" aria-live="polite" data-toast></div>
+
+  <dialog class="modal" data-record-dialog><form method="dialog" class="modal-card"><div class="modal-head"><div><p class="eyebrow">事项详情</p><h2>处理时间线</h2></div><button class="icon-button" value="cancel" aria-label="关闭">×</button></div><div data-record-detail></div><div class="modal-actions"><button class="button secondary" value="cancel">关闭</button><button class="button primary" value="cancel" type="button" data-toast-message="复核申请入口已打开（离线演示）">申请复核</button></div></form></dialog>
+  <dialog class="modal" data-search-dialog><form method="dialog" class="modal-card search-modal"><div class="modal-head"><div><p class="eyebrow">全站检索</p><h2>查找机制功能</h2></div><button class="icon-button" value="cancel" aria-label="关闭">×</button></div><label class="search-field"><span>⌕</span><input type="search" placeholder="例如：记录查询、证据包、风险预警" data-search-input autocomplete="off"></label><div class="search-results" data-search-results></div></form></dialog>
+  <script src="../js/main.js"></script>
+</body>
+</html>
